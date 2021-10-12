@@ -1,0 +1,52 @@
+.top {
+  background-color: #99ccff;
+  width: 400px;
+  text-align: center;
+  margin: auto;
+}
+ .me {
+  background-color: #99ccff;
+  color: #00ffcc;
+  border: 5px solid #555;
+  border-color: #00ffcc;
+}
+.bottom {
+  background-color: #99ccff;
+  color: #ccff33;
+  border: 5px solid #555;
+  border-color: #ccff33;
+}
+
+@keyframes moving {
+  0% {border-color: #cc33ff; right:0px; top:0px;}
+  25% {border-color: #00ffcc; right:100px; top:0px;}
+  50% {border-color: #ccff33; right:0px; top:0px;}
+  75% {border-color: #99ccff; right:-100px; top:0px;}
+  100% {border-color: #cc33ff; right:0px; top:0px;}
+}
+.pic {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15px;
+  width: 30%;
+  border: 5px solid #555;
+  border-color: #cc33ff;
+  animation-name: moving;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-timing-function: linear;
+  position: relative;
+}
+.main {
+  text-align: center;
+  width: 300px;
+  margin: auto;
+}
+.border {
+  border: 5px solid #555;
+  border-radius: 10% / 50%;
+  width: 400px;
+  margin: auto;
+}
